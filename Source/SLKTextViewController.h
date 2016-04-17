@@ -181,6 +181,12 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface SLKTextViewController : UIViewController 
  */
 + (UICollectionViewLayout *)collectionViewLayoutForCoder:(NSCoder *)decoder;
 
+/**
+ Chris Weeks: Made this guy public because of some issue in iOS that disconnects
+ notifications whenever I transition to a new VC and back.
+ */
+- (void)registerNotifications;
+
 
 #pragma mark - Keyboard Handling
 ///------------------------------------------------

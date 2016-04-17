@@ -147,7 +147,7 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
 
 - (void)slk_commonInit
 {
-    [self slk_registerNotifications];
+    [self registerNotifications];
     
     self.bounces = YES;
     self.inverted = YES;
@@ -2193,7 +2193,7 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
 
 #pragma mark - NSNotificationCenter registration
 
-- (void)slk_registerNotifications
+- (void)registerNotifications
 {
     [self slk_unregisterNotifications];
     
